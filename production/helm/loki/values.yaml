@@ -80,11 +80,7 @@ config:
         period: 168h
   server:
     http_listen_port: 3100
-  storage_config:
-    boltdb:
-      directory: /data/loki/index
-    filesystem:
-      directory: /data/loki/chunks
+  storage_config: {}
   chunk_store_config:
     max_look_back_period: 0s
   table_manager:
